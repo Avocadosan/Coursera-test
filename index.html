@@ -1,0 +1,158 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/style.css">
+            <script src="js/jquery.min.js"></script>
+            <script src="js/script.js"></script>
+
+    </head>
+    <style>
+            h4 {
+                padding-left: 5%;
+                color: aliceblue;
+            }
+    </style>
+    <body>
+            <div class="row"><!--Header-->
+
+                    
+                    <div class="col-sm ">
+                            <h1 class="display-3">IndieViewer</h1>
+                    </div>
+                    <div class="col-sm">
+                               <img src="images/logo.png">
+                        </div>
+
+            </div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+                      <!-- Links -->
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" id="nullBtn"></a>
+                        </li>
+                        <li class="nav-item" >
+                                <button id="consultarBtn">Consultar</button>
+                        </li>
+                        <li class="nav-item">
+                                <button  id="visualizarBtn">Visualizar</button>
+                        </li>
+                        <li class="nav-item">
+                                <button  id="agregarBtn">Agregar</button>
+                        </li>
+                        <li class="nav-item">
+                                <button  id="modificarBtn">Modificar</button>
+                        </li>
+                        
+                      </ul>
+                    
+            </nav>
+            <div class="row " id='welcomeDiv'><!--welcome-->
+                
+                                    
+                <div class="col-sm 2" style="background-color: #ff7f50;"></div>
+                
+                 <div class="col-sm 8" style="text-align: center; padding: 0.5% 1% 1% 0.2%;" id="bienvenidoText">
+                        <h3>Bienvenido!</h3>
+                 </div>
+
+                <div class="col-sm 2" style="background-color: #ff7f50;"></div>
+                                    
+             </div>
+
+            <div class='row' style="background-color: #56bfd1;" id="loginDiv"><!--login-->
+                
+                <div class="col-sm 2" style="background-color: #ff7f50;"></div>
+                                
+                <div class="col-sm 8" style="text-align: center; background-color: #d6d6d6; padding: 0.5% 1% 1% 0.2%; ">
+                        <h2>Login</h2>
+                        <input type="text" class="form-control" placeholder="Usuario" id="user">
+                        <input type="password" class="form-control" placeholder="password" id="password">
+                        <br>
+                        <button type="button" class="btn btn-danger" id="loginBtn">Login</button>
+                </div> 
+                
+                <div class="col-sm 2" style="background-color: #ff7f50;"></div>
+                                    
+            </div>
+
+            <div  id="mainPageDiv"  style="text-align: center;">
+                        
+                <h1 class="display-5">Bienvenido! Que desea hacer?</h1>
+                                
+            </div>
+
+            <div  id="consultarDiv"  style="text-align: center;">
+                        
+                <h1 class="display-5">Ingrese el juego que desea ver</h1>
+                <div class="form-group">
+                        <input type="text" class="form-control" id="consultarInput" >
+                </div>
+                <div id='consultarHtml'>
+
+                </div>
+                                
+            </div>
+
+            <div  id="visualizarDiv"  style="text-align: center;">
+                        
+                <h1 class="display-5">Lista de juegos</h1>
+                
+                <div id="visualizarHtml">
+
+                </div>
+                                
+            </div>
+
+            <div  id="agregarDiv"  style="text-align: center;">
+                        
+                <h1 class="display-5">Agregar Juego</h1>
+                <form>
+                <div class="form-group">
+                        <label for="agregarName">Name:</label>
+                        <input type="text" class="form-control" id="agregarName">
+                </div>
+                <div class="form-group">
+                        <label for="agregarGenre">Genre:</label>
+                        <input type="text" class="form-control" id="agregarGenre">
+                </div>
+                <div class="form-group">
+                        <label for="agregarPublisher">Publisher:</label>
+                        <input type="text" class="form-control" id="agregarPublisher">
+                </div>
+                <div class="form-group">
+                        <label for="agregarDeveloper">Developer:</label>
+                        <input type="text" class="form-control" id="agregarDeveloper">
+                 </div>
+                 <div class="form-group">
+                        <label for="agregarDate">Date:</label>
+                        <input type="date" class="form-control" id="agregarDate" format="yyyy/MM/dd">
+                </div>
+                <div class="form-group">
+                        <label for="agregarImagen">Imagen:</label>
+                        <input type="file" class="form-control" id="agregarImagen">
+                </div>
+
+                <button type="button" class="btn btn-primary" id='subirBtn'>Subir</button>
+                
+                              
+                                
+            </div>
+
+            <div  id="modificarDiv"  style="text-align: center;">
+                        
+                <h1 class="display-5">Ingrese el juego que desea modificar</h1>
+                <div class="form-group">
+                        <input type="text" class="form-control" id="modificarInput" >
+                </div>
+                <div id='modificarHtml'>
+
+                </div>
+
+                <button type='button' class='btn btn-primary' id='modificarSubir'>Subir</button>
+                                
+            </div>
+
+
+    </body>
+</html>
