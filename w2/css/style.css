@@ -4,7 +4,18 @@
 
 
 
-.itemTitle{
+.itemTitle1{
+    float: right;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: rgb(252, 255, 55);
+}
+
+.itemTitle2{
     float: right;
     text-align: center;
     padding: 5px 10px 5px 10px;
@@ -13,6 +24,17 @@
     border-radius: 2px;
     box-sizing: border-box;
     background-color: #BBACC1;
+}
+
+.itemTitle3{
+    float: right;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: rgb(100, 247, 132);
 }
 
 .itemDes{
